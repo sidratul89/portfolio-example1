@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Portfolio</title>
+</head>
+<style>
+	body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+	.left-part{
+		width: 23%;
+		background: white;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 77%;
+	}
+	.photo{
+		width: 41%;
+		border-radius: 4px;
+		margin-left: 18px;
+		margin-top: 23px;
+	}
+	.text1{
+		margin-left: 18px;
+	}
+	.temp{
+		color: #757575;
+		margin-left: 18px;
+		padding-bottom: 13px;
+	}
+	ul li{
+		list-style-type: none;
+	}
+	ul li a {
+		text-decoration: none;
+		padding-right: 160px;
+		padding-left: 10px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	ul li a:hover{
+		background: lightgrey;
+		margin-right: -9px;
+	}
+	.list{
+		margin-left: -30px;
+		margin-top: -10;
+		margin-right: -9px;
+	}
+	.icons{
+		margin-left: 23px;
+		font-size: 18px;
+	}
+	.right-part{
+		background: #f1f1f1;
+		width: 78%;
+		height: 100%;
+		margin-left: 22.4%;
+	}
+	.right-section{
+		margin-top: -435px;
+		padding: 10px;
+	}
+	.button{
+		margin-left: 60px;
+		margin-top: -40px;
+	}
+	.all{
+		padding: 8px 14px;
+		color: white;
+		background: black;
+	}
+	.all:hover{
+		background: lightgrey;
+		border: none;
+		color: black;
+	}
+	.buttons{
+		padding: 8px 13px;
+		color: black;
+		background: white;
+		border: none;
+	}
+	.buttons:hover{
+		background: lightgrey;
+	}
+	.border{
+		border: 3px solid lightgrey;
+		width: 97%;
+	}
+	.design{
+		width: 31%;
+		margin: 5px;
+	}
+	.ph6{
+		background: white;
+		margin-right: 652px;
+		margin-left: 5px;
+		margin-top: -14px;
+		padding: 7px 17px;
+	}
+	.design1{
+		margin-left: 315px;
+		width: 31%;
+		margin-top: -539px;
+	}
+	.ph61{
+		margin-left: 316px;
+		margin-right: 342px;
+		margin-top: -187px;
+		background: white;
+		padding: 5px 14px;
+	}
+	.design2{
+		width: 31%;
+		margin-left: 625px;
+		margin-top: -537px;
+	}
+	.ph62{
+		margin-left: 625px;
+		margin-right: 32px;
+		padding: 4px 17px;
+		background: white;
+		margin-top: -183px;
+	}
+	.p1234{
+		text-align: center;
+	}
+	.p1213{
+		text-decoration: none;
+		padding: 10px 15px;
+		background: black;
+		color: white;
+	}
+	.p1212{
+		text-decoration: none;
+		padding: 10px 15px;
+	}
+	.p1212:hover{
+		background: black;
+		color: white;
+	}
+	.photo22{
+		width: 47%;
+		margin-left: 10px; 
+	}
+	.photo23{
+		width: 47%;
+		margin-left: 20px;
+	}
+	.aboutme{
+		margin-left: 10px;
+	}
+	.justme{
+		margin-left: 10px;
+	}
+	.skill{
+		margin-left: 10px;
+	}
+	.graph{
+		margin-left: 10px;
+	}
+	.photo95{
+		margin-left: 10px;
+		color: white;
+		background: #616161;
+		padding: 7px 13px;
+		text-align: center;
+		width: 92%;
+	}
+	.photo96{
+		background: #9e9e9e;
+		width: 6%;
+		padding: 7.5px 13px;
+		margin-left: 886.5px;
+		margin-top: -48px;
+	}
+	.photo85{
+		margin-left: 10px;
+		color: white;
+		background: #616161;
+		padding: 7px 13px;
+		text-align: center;
+		width: 82%;
+	}
+	.photo86{
+		background: #9e9e9e;
+		width: 16%;
+		padding: 7.5px 13px;
+		margin-left: 790px;
+		margin-top: -48px;
+	}
+	.photo75{
+		margin-left: 10px;
+		color: white;
+		background: #616161;
+		padding: 7px 13px;
+		text-align: center;
+		width: 78%;
+	}
+	.photo76{
+		background: #9e9e9e;
+		width: 20%;
+		padding: 7.5px 13px;
+		margin-left: 753px;
+		margin-top: -48px;
+	}
+	.download{
+		padding: 12px 24px;
+		color: white;
+		background: #616161;
+		border: none;
+		margin-left: 10px;
+		margin-top: 35px;
+	}
+	a{
+		text-decoration: none;
+	}
+	.download:hover{
+		background: lightgrey;
+		color: black;
+	}
+	.How{
+		margin-left: 10px;
+		margin-top: 60px;
+	}
+	.basic-large{
+		border-bottom: 1px solid #ddd;
+		padding: 35px 130px;
+		color: white;
+		background: black;
+		font-size: 25px;
+		text-align: center;
+		margin-right: -246px;
+		margin-left: 0;
+	}
+	.basic{
+		margin-left: -25px;
+		width: 10%;
+		margin-right: -246px;
+		opacity: 60%;
+	}
+	.basic:hover{
+		opacity: 100%;
+	}
+	.list1{
+		padding: 10px 151px;
+		border-bottom: 1px solid #ddd;
+		background: white;
+		color: black;
+	}
+	.signup{
+		color: white;
+		background: #009688;
+		padding: 1px 39px;
+		margin-left: -48px;
+		margin-top: 0;
+		margin-right: 0;
+		border: 1px solid lightgrey;
+	}
+	.list2{
+		padding: 10px 151px;
+		border-bottom: 1px solid #ddd;
+		background: white;
+		color: black;
+	}
+	.basic2{
+		margin-left: 290px;
+		width: 10%;
+		opacity: 60%;
+		margin-top: -566px;	
+	}
+	.basic2:hover{
+		opacity: 100%;
+	}
+	.basic-large2{
+		border-bottom: 1px solid #ddd;
+		padding: 35px 130px;
+		color: white;
+		background: #009688;
+		font-size: 25px;
+		text-align: center;
+		margin-right: -246px;
+		margin-left: 0;
+	}
+	.basic3{
+		margin-left: 610px;
+		width: 10%;
+		opacity: 60%;
+		margin-top: -566px;
+	}
+	.basic3:hover{
+		opacity: 100%;
+	}
+	.basic-large3{
+		border-bottom: 1px solid #ddd;
+		padding: 35px 130px;
+		color: white;
+		background: black;
+		font-size: 25px;
+		text-align: center;
+		margin-right: -246px;
+		margin-left: 0;
+	}
+	.first-footer{
+		background: #9e9e9e;
+		margin-left: -1px;
+	}
+	.contact{
+		padding: 5px;
+		margin-left: 20px;
+	}
+	.contacts{
+		background: #616161;
+		color: white;
+		width: 30%;
+		padding: 5px 8px;
+		text-align: center;
+		margin-left: 20px;
+	}
+	.contacts2{
+		background: #009688;
+		color: white;
+		width: 30%;
+		padding: 5px 8px;
+		text-align: center;
+		margin-left: 309px;
+		margin-top: -100px;
+	}
+	.contacts3{
+		background: #616161;
+		color: white;
+		width: 30%;
+		padding: 5px 8px;
+		text-align: center;
+		margin-left: 598px;
+		margin-top: -100px;
+	}
+	.footer-form{
+		margin-left: 20px;
+	}
+	input{
+		padding: 7px;
+		width: 95%;
+		border: none;
+	}
+	.mesgg{
+		color: white;
+		background: black;
+		padding: 8px 10px;
+		border: none;
+	}
+	.mesgg:hover{
+		background: #ddd;
+		color: black;
+	}
+	.borders{
+		border-bottom: 1px solid white;
+		width: 90%;
+		margin-left: 20px;
+	}
+	footer{
+		background: #616161;
+		margin-top: -10px;
+		margin-left: -1px;
+		padding-bottom: 88px;
+	}
+	.paragraph1{
+		color: white;
+		margin-left: 10px;
+	}
+	h2{
+		margin-left: 26px;
+		color: white;
+	}
+	.tellus{
+		color: white;
+		margin-left: 26px;
+		margin-right: 650px;
+	}
+	.blog-post{
+		margin-left: 335px;
+		margin-top: -161px;
+	}
+	.workshop{
+		width: 8%;
+	}
+	.blog{
+		font-size: 28px;
+		color: white;
+	}
+	.lorems{
+		color: white;
+		font-size: 19px;
+		margin-left: 63px;
+		margin-top: -52px;
+	}
+	.mattis{
+		color: white;
+		font-size: 14px;
+		margin-left: 63px;
+		margin-top: -17px;
+	}
+	.gondol{
+		width: 5.5%;
+		margin-left: 334px;
+		margin-top: 6px;
+	}
+	.ipsums{
+		color: white;
+		font-size: 20px;
+		margin-left: 401px;
+		margin-top: -50px;
+	}
+	.tinci{
+		font-size: 13.5px;
+		margin-left: 400px;
+		margin-top: -21px;
+		color: white;
+	}
+	.posts{
+		font-size: 28px;
+		margin-left: 610px;
+		margin-top: -212px;
+	}
+	.travels{
+		margin-left: 610px;
+		margin-top: 15px;
+		background: black;
+		color: white;
+		padding: 4px 3px;
+		width: 5%;
+	}
+	span{
+		margin-left: 611px;
+		background: #f1f1f1;
+		color: black;
+	}
+	.power{
+		background: black;
+		padding: 30px;
+	}
+	.w3css{
+		color: white;
+		text-align: center;
+	}
+</style>
+<body>
+	<div class="left-part">
+		<img src="avatar1.jpg" class="photo"> <br> <br>
+		<h4 class="text1"><b>PORTFOLIO</b></h4>
+		<p class="temp">Template by W3.CSS</p>
+		<div class="list">
+			<ul>
+				<li><a href="#"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a></li> <br>
+				<li><a href="#"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a></li> <br>
+				<li><a href="#"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a></li>
+			</ul>
+		</div>
+		<div class="icons">
+			<i class="fa fa-facebook-official w3-hover-opacity"></i>
+    		<i class="fa fa-instagram w3-hover-opacity"></i>
+    		<i class="fa fa-snapchat w3-hover-opacity"></i>
+    		<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    		<i class="fa fa-twitter w3-hover-opacity"></i>
+    		<i class="fa fa-linkedin w3-hover-opacity"></i>
+    	</div>	
+	</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class="right-part">
+		<div class="right-section">
+			<h1><b>My Portfolio</b></h1><br>
+			<h6>Filter:</h6>
+			<div class="button">
+				<button class="all">ALL</button>
+				<button class="buttons"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
+				<button class="buttons"><i class="fa fa-photo w3-margin-right"></i>Photo</button>
+				<button class="buttons"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+			</div><br>
+			<div class="border"></div>
+			<br>
+			<div class="photos">
+				<img class="design" src="lorem1.jpg">
+				<div class="ph6">
+				<h6><b>Lorem Ipsum</b></h6>
+				<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p></div>
+				<img class="design1" src="lorem2.jpg">
+				<div class="ph61">
+				<h6><b>Lorem Ipsum</b></h6>
+				<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p></div>
+				<img class="design2" src="lorem3.jpg">
+				<div class="ph62">
+				<h6><b>Lorem Ipsum</b></h6>
+				<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p></div> <br>
+				<img class="design" src="lorem4.jpg">
+				<img class="design" src="lorem5.jpg">
+				<img class="design" src="lorem6.jpg"> <br><br><br><br><br>
+			</div>	
+
+			<div class="p1234">
+				<a href="#" class="p1212"><<</a>
+				<a href="#" class="p1213">1</a>
+				<a href="#" class="p1212">2</a>
+				<a href="#" class="p1212">3</a>
+				<a href="#" class="p1212">>></a>
+			</div> <br><br>
+
+			<div class="photos1">
+				<img src="avatar1.jpg" class="photo22">
+				<img src="me2.jpg" class="photo23">
+			</div> <br><br>
+			<h4 class="aboutme"><b>About Me</b></h4>
+			<p class="justme">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+			<h4 class="skill">Technical Skills</h4> <br>
+			<h6 class="graph">Photography</h6>
+			<h6 class="photo95">95%</h6>
+			<div class="photo96">.</div>
+			<p class="skill">Web Design</p>
+			<h6 class="photo85">85%</h6>
+			<div class="photo86">.</div>
+			<p class="skill">Photoshop</p>
+			<h6 class="photo75">80%</h6>
+			<div class="photo76">.</div>
+			<button class="download"><a href="#"><i class="fa fa-download w3-margin-right"></i>Download Resume</a></button>
+			<h4 class="How">How much I charge</h4>
+			<div class="basic">
+				<ul>
+					<li class="basic-large">Basic</li>
+					<li class="list1">Web Design</li>
+					<li class="list1">Photography</li>
+					<li class="list1">1GB Storage</li>
+					<li class="list1">Mail Support</li>
+					<li class="list1"><h2>$10</h2>
+						<span>per month</span>
+					</li>
+					<li class="list2"><button class="signup">Sign Up</button></li>
+				</ul>
+				
+			</div>
+			<div class="basic2">
+				<ul>
+					<li class="basic-large2">Pro</li>
+					<li class="list1">Web Design</li>
+					<li class="list1">Photography</li>
+					<li class="list1">1GB Storage</li>
+					<li class="list1">Mail Support</li>
+					<li class="list1"><h2>$10</h2>
+						<span>per month</span>
+					</li>
+					<li class="list2"><button class="signup">Sign Up</button></li>
+				</ul>
+				
+			</div>
+			<div class="basic3">
+				<ul>
+					<li class="basic-large3">Premium</li>
+					<li class="list1">Web Design</li>
+					<li class="list1">Photography</li>
+					<li class="list1">1GB Storage</li>
+					<li class="list1">Mail Support</li>
+					<li class="list1"><h2>$10</h2>
+						<span>per month</span>
+					</li>
+					<li class="list2"><button class="signup">Sign Up</button></li>
+				</ul>
+			</div> <br> <br> <br> <br>
+
+			<div class="first-footer">
+				<h4 class="contact"><b>Contact me</b></h4>
+				<div class="contacts">
+					<i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i>
+					<p>sidratulbinte02@gmaol.com</p>
+				</div>
+				<div class="contacts2">
+					<i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i>
+					<p>Seoul,South Korea</p>
+				</div>
+				<div class="contacts3">
+					<i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i>
+					<p>282828</p>
+				</div> <br><br>
+
+				<div class="borders"></div> <br><br>
+
+				<form target="_blank" class="footer-form">
+					<label>Name</label><br>
+					<input type="text" name="Name"><br><br>
+					<label>Email</label><br>
+					<input type="text" name="Email"><br><br>
+					<label>Messege</label><br>
+					<input type="text" name="Messege"><br><br>
+					<button class="mesgg"><i class="fa fa-paper-plane w3-margin-right"></i>Send Messege</button> <br><br>
+				</form> 
+			</div>
+
+			<footer>
+				<br>
+				<h2 class="footer">FOOTER</h2>
+				<p class="tellus">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+				<div class="blog-post">
+					<h1 class="blog">BLOG POST</h1>
+					<img src="workshop.jpg" class="workshop">
+					<p class="lorems">Lorem</p>
+					<p class="mattis">Sed mattis nunc</p>
+				</div><br>
+				<div class="ipsum">
+					<img src="gondol.jpg" class="gondol">
+					<p class="ipsums">Ipsum</p>
+					<p class="tinci">Praes tinci sed</p>
+				</div>
+				<div class="travel">
+						<h2 class="posts">POPULAR POST</h2>
+						<p class="travels">Travel</p><span>New York</span>
+					</div>
+			</footer>
+			<div class="power">
+				<p class="w3css">Powered by <a href="#">w3.css</a></p>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
